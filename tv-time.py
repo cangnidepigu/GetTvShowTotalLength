@@ -1,10 +1,10 @@
 """
 Usage "$  py/python tv-time.py < tv-shows.txt"
-Script reads the file from the standard input, strips trailing and leading whitespaces from individual lines, appends results to new list.
+Reads the file from the standard input, strips trailing and leading whitespaces from individual lines, appends results to new list.
 Function GetTvShowTotalLength using the C# application binary which path is passed via environment variable GET_TVSHOW_TOTAL_LENGTH_BIN
-tries to retrieve info about the show, if succeeds resturns {title: totalLength(in minutes)} otherwise error is printed to standard error output.
+tries to retrieve info about the show, if all is good returns {title: totalLength(in minutes)} otherwise error is printed to standard error output.
 
-On start, calls to GetTvShowTotalLength in parallel, filters None values and adds everyhing to new dictonary, finds longest and shortest show, prints result
+On start, calls to GetTvShowTotalLength in parallel, filters out None values and adds everyhing to new dictonary, finds longest and shortest show, prints result
 """
 
 import os
