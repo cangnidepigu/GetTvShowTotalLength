@@ -5,7 +5,6 @@ Function GetTvShowTotalLength using the C# application binary which path is pass
 tries to retrieve info about the show, if succeeds resturns {title: totalLength(in minutes)} otherwise error is printed to standard error output.
 
 On start, calls to GetTvShowTotalLength in parallel, filters None values and adds everyhing to new dictonary, finds longest and shortest show, prints result
-Tested on Win 10 in cmd 
 """
 
 import os
