@@ -30,7 +30,7 @@ async Task<List<Show>> ProcessShowsAsync(HttpClient client)
     try
     {
         await using Stream streamId =
-                await client.GetStreamAsync($"https://api.tvmaze.com/singlesearch/shows?q={query}");
+            await client.GetStreamAsync($"https://api.tvmaze.com/singlesearch/shows?q={query}");
 
         var queriedShow =
             await JsonSerializer.DeserializeAsync<Show>(streamId);
